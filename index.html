@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="login, acesso, seguraça, conta">
   <title>Login | Minha Platforma</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
       <p class="subtitle">Entre com suas credenciais para acessar</p>
     </header>
 
-    <form action="/login" method="POST"></form>
+    <form action="/login" method="POST">
       <div class="form-group">
         <label for="email">Email ou Usuário</label>
         <div class="input-group">
@@ -27,10 +28,34 @@
           <div class="input-group">
             <input type="password" id="password" name="password" placeholder="Senha" required="required">
           </div>
-      </div>
-      
-      <div class="forgot-password"><a href="/recuperar-senha">Esqueceu sua senha?</a></div>
-    </main>
+        </div>
+
+        <div class="forgot-password">
+          <a href="/recuperar-senha">
+            Esqueceu sua senha
+          </a>
+        </div>
+        <div class="options">
+          <div class="remember-me"><input type="checkbox" id="remember" name="remember"><label for="remember">Lembrar-me</label>
+          </div>
+        </div>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <div class="divider">
+      <span>Ou continue com</span>
+    </div>
+    <div class="social-login">
+      <a href="#" arial-label="Entrar com Google">G</a>
+      <a href="#" arial-label="Entrar com Facebook">F</a>
+      <a href="#" arial-label="Entrar com Apple">A</a>
+    </div>
+
+    <div class="singup-link">
+      Não tem uma conta? <a href="/cadastro/">Criar conta</a>
+    </div>
+  </main>
 </body>
 
 </html>
