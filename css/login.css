@@ -73,6 +73,24 @@ input::placeholder {
   opacity: 0.7;
 }
 
+.forgot-password {
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+
+.forgot-password a {
+  color: var(--text-secundary);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.forgot-password a:hover {
+  color: var(--primary-color);
+}
+
+
+
 .a-social {
   width: 30px;
 }
